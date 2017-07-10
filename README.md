@@ -1,5 +1,8 @@
 # puck (Python Update cheCKer)
 
+[![Travis](https://img.shields.io/travis/NativeInstruments/puck.svg?style=flat-square)](https://travis-ci.org/NativeInstruments/puck) [![license](https://img.shields.io/github/license/NativeInstruments/puck.svg?style=flat-square)](https://github.com/NativeInstruments/puck/blob/master/LICENSE)
+
+
 A tool to get an overview on which Python dependencies need updates.
 
 It takes one or more requirements text files or setup py files and prints
