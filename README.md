@@ -11,7 +11,13 @@ they are *pinned*, i.e. of the form ```abc==1.2.3```.
 
 ## Installation
 
-* `pip install puck`
+```
+$ git clone https://github.com/NativeInstruments/puck.git
+$ cd puck
+$ pip install .
+```
+
+*installation from PyPI coming soon* 
 
 ## Usage
 
