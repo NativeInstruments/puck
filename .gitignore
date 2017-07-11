@@ -1,0 +1,10 @@
+*.swp
+*.egg-info/
+dist/
+*.pyc
+*.DS_STORE
+.cache/
+.eggs/
+.tox/
+build/
+.vscode/
