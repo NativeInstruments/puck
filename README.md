@@ -12,12 +12,8 @@ they are *pinned*, i.e. of the form ```abc==1.2.3```.
 ## Installation
 
 ```
-$ git clone https://github.com/NativeInstruments/puck.git
-$ cd puck
-$ pip install .
+$ pip install puck
 ```
-
-*installation from PyPI coming soon* 
 
 ## Usage
 
@@ -32,3 +28,10 @@ Check setup.py files:
 Check a combination of files:
 
 ```puck -s setup.py -f requirements-test.txt -f requirements-prod.txt```
+
+
+## Changelog
+
+### 1.0.4 (2017-07-11)
+
+* First public release
