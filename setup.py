@@ -26,7 +26,7 @@ extras = {
 
 setup(
     name='puck',
-    version='1.0.3',
+    version='1.0.4',
     description='Python Update cheCKer',
     long_description=desc,
     author='Native Instruments GmbH',
