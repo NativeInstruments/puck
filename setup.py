@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 from setuptools import find_packages, setup
 
+from puck import __version__ as version
+
 desc = '''
 
 puck (Python Update cheCKer)
@@ -26,7 +28,7 @@ extras = {
 
 setup(
     name='puck',
-    version='1.0.3',
+    version=version,
     description='Python Update cheCKer',
     long_description=desc,
     author='Native Instruments GmbH',
