@@ -26,7 +26,7 @@ extras = {
 
 setup(
     name='puck',
-    version='1.0.0',
+    version='1.0.3',
     description='Python Update cheCKer',
     long_description=desc,
     author='Native Instruments GmbH',
@@ -49,7 +49,7 @@ setup(
     },
     classifiers=[
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 2.7'
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.6'
     ],
 )

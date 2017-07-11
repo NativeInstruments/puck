@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import click
+from puck import __version__ as version
 from puck.backend import high_version_backend, pypi_backend
 from puck.output import output_fn
 from puck.parser import parse_requirements_file, parse_setup_py
@@ -46,7 +47,7 @@ pinned dependencies and displays updated version information."""
     help='output format'
 )
 @click.version_option(
-    version='1.0.0',
+    version=version,
     prog_name=NAME
 )
 def check(
