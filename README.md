@@ -17,6 +17,25 @@ $ pip install puck
 
 ## Usage
 
+```
+ $ puck --help
+Usage: puck [OPTIONS]
+
+  Checks Python projects for outdated dependencies
+
+Options:
+  -f, --requirements-file PATH  parse a requirements.txt file
+  -s, --setup-py-file PATH      parse a setup.py file
+  -a, --show-all                show up-to-date entries as well
+  -t, --test-backend            query a dummy backend instead of PyPI
+  -o, --output [default|json]   output format
+  --version                     Show the version and exit.
+  --help                        Show this message and exit.
+```
+
+
+## Examples
+
 Check one or more requirements text files:
 
 ```puck -f requirements.txt```
@@ -28,6 +47,12 @@ Check setup.py files:
 Check a combination of files:
 
 ```puck -s setup.py -f requirements-test.txt -f requirements-prod.txt```
+
+Use the json output function:
+
+```$ puck -f testdata/requirements.txt -o json
+[{"source": "src/puck/testdata/requirements.txt", "name": "pytest-cov", "latest_version": "2.5.1", "pinned_version": "2.4.0"}]
+```
 
 
 ## Changelog
