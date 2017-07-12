@@ -57,6 +57,10 @@ Use the json output function:
 
 ## Changelog
 
+### 1.0.5 (2017-07-12)
+
+* Comments in requirements.txt files where causing `puck` to crash ([#5](https://github.com/NativeInstruments/puck/issues/5))
+
 ### 1.0.4 (2017-07-11)
 
 * First public release
