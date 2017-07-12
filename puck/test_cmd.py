@@ -16,6 +16,16 @@ def test_setup_py():
     assert 'pytest-cov' in result.output
 
 
+def test_req_with_comment():
+    runner = CliRunner()
+    result = runner.invoke(
+        check,
+        ['-t', '-f', 'testdata/requirements-with-comments.txt']
+    )
+    assert result.exit_code == 0
+    assert 'dep' in result.output
+
+
 def test_json_output():
     runner = CliRunner()
     result = runner.invoke(
