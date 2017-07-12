@@ -28,8 +28,8 @@ def parse_requirement(line, source, backend=pypi_backend):
                 'latest_version': latest,
                 'source': source,
             }
-    except ValueError as e:
-        print("Fail {} {}".format(line, e))
+    except Exception:
+        return None
 
 
 def parse_requirements_file(requirements_file, backend=pypi_backend):
@@ -37,13 +37,13 @@ def parse_requirements_file(requirements_file, backend=pypi_backend):
     results = []
     with open(requirements_file, 'r') as rfile:
         for line in rfile.readlines():
-            results.append(
-                parse_requirement(
-                    line.strip(),
-                    requirements_file,
-                    backend=backend,
-                )
+            res = parse_requirement(
+                line.strip(),
+                requirements_file,
+                backend=backend,
             )
+            if res:
+                results.append(res)
     return results
 
 
