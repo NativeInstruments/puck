@@ -26,6 +26,16 @@ def test_req_with_comment():
     assert 'dep' in result.output
 
 
+def test_req_with_spaces():
+    runner = CliRunner()
+    result = runner.invoke(
+        check,
+        ['-t', '-f', 'testdata/requirements-with-spaces.txt']
+    )
+    assert result.exit_code == 0
+    assert 'pytest-cov' in result.output
+
+
 def test_json_output():
     runner = CliRunner()
     result = runner.invoke(
