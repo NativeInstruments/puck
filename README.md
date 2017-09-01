@@ -57,6 +57,10 @@ Use the json output function:
 
 ## Changelog
 
+### Unreleased
+
+* Fixed python3 installation from pip (Now building the wheel with `--universal`, see [#8](https://github.com/NativeInstruments/puck/issues/8))
+
 ### 1.0.5 (2017-07-12)
 
 * Comments in requirements.txt files where causing `puck` to crash ([#5](https://github.com/NativeInstruments/puck/issues/5))
