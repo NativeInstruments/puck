@@ -24,7 +24,7 @@ def parse_requirement(line, source, backend=pypi_backend):
             latest = backend(r.name)
             return {
                 'name': r.name,
-                'pinned_version': current_version,
+                'pinned_version': current_version.strip(),
                 'latest_version': latest,
                 'source': source,
             }

@@ -60,6 +60,7 @@ Use the json output function:
 ### Unreleased
 
 * Fixed python3 installation from pip (Now building the wheel with `--universal`, see [#8](https://github.com/NativeInstruments/puck/issues/8))
+* Fixed parsing requirements with spaces ([#9](https://github.com/NativeInstruments/puck/issues/9))
 
 ### 1.0.5 (2017-07-12)
 
