@@ -57,6 +57,10 @@ Use the json output function:
 
 ## Changelog
 
+### Unreleased changes
+
+* Use pytest==3.2.3 and six==1.11.0
+
 ### 1.0.6 (2017-09-01)
 
 * Fixed python3 installation from pip (Now building the wheel with `--universal`, see [#8](https://github.com/NativeInstruments/puck/issues/8))
