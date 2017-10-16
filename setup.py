@@ -15,7 +15,7 @@ A tool to get an overview on which Python dependencies need updates.
 
 
 test_deps = [
-    "pytest==3.1.3",
+    "pytest==3.2.3",
     "pytest-cov==2.5.1",
     "pytest-random==0.02",
     "mock==2.0.0"
@@ -41,7 +41,7 @@ setup(
     # production requirements
     install_requires=[
         "click==6.7",
-        "six==1.10.0",
+        "six==1.11.0",
     ],
     tests_require=test_deps,
     extras_require=extras,
