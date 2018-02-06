@@ -1,4 +1,7 @@
+from __future__ import print_function
+
 import re
+import sys
 
 import pkg_resources
 from puck.backend import pypi_backend
@@ -29,6 +32,7 @@ def parse_requirement(line, source, backend=pypi_backend):
                 'source': source,
             }
     except Exception:
+        print("Error while parsing or retrieving the latest version for:", line, file=sys.stderr)  # noqa
         return None
 
 
@@ -55,11 +59,11 @@ def parse_setup_py(setup_py, backend=pypi_backend):
             req = re.search('[\w\-\_]+==[\w\.]+', line.strip())
             if req:
                 requirement = req.group()
-                results.append(
-                    parse_requirement(
-                        requirement,
-                        setup_py,
-                        backend=backend,
-                    )
+                res = parse_requirement(
+                    requirement,
+                    setup_py,
+                    backend=backend,
                 )
+                if res:
+                    results.append(res)
     return results
