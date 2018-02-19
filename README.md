@@ -59,7 +59,9 @@ Use the json output function:
 
 ### Unreleased changes
 
-* Use pytest==3.3.2 and six==1.11.0
+### 1.0.7 (2017-02-19)
+
+* Use pytest==3.4.0 and six==1.11.0
 * Fixed failure when retrieving version information fails. Now also prints an error message to stderr
 
 ### 1.0.6 (2017-09-01)
